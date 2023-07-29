@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.589), rgba(65, 26, 4, 0.534));
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.upper {
+    
+    width: 100%;
+    height: 105px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-bottom: 4px double red;
+}
+
+.logo {
+    margin: 0px;
+    padding: 0px;
+}
+.logo img {
+    border-radius: 40px;
+}
+
+/*---------------------------------upper-links-------------------------------*/
+.links {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+.links ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links ul li {
+    list-style: none;
+    margin-left: 350px;
+    margin-top: 27px;
+    font-size: 18px;
+}
+.links ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    transition: 0.3s ;
+}
+.links ul li a:hover {
+    color: red;
+    text-decoration: underline;
+    transition: 0.3s ;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+.lower {
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin: 10px;
+}
+.left {
+
+    height: 500px;
+    width: 400px;
+
+}
+.circle {
+    position: fixed;
+    top: 120px;
+    left: 0px;
+    height: 584px;
+    width: 280px;
+    background-color: rgba(9, 232, 248, 0.322);
+    border-radius: 0 297px 297px 0 ;
+}
+
+/*-----------------------------------cirle-links------------------------------*/
+
+.clinks li {
+    display:flex;
+    margin-top: 245px;
+    margin-left: 20px;
+
+}
+#o1 {
+    margin-top: 190px;
+    position: absolute;
+    top: 30px;
+    font-size: 35px;
+}
+
+#o3 {
+    margin-top: 270px;
+    position: absolute;
+    top: 30px;
+    font-size: 35px;
+}
+
+
+.arrows {
+    width: fit-content;
+}
+.arrows img {
+    position: relative;
+    display: flex;
+    top: 210px;
+    left: 40px;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    margin-left: 120px;
+    cursor: pointer;
+}
+.arrows img:hover {
+    box-shadow: 0px 0px 30px rgba(14, 86, 134, 0.753);
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.right {
+}
+
+.heading {
+
+}
+
+.t {
+
+    color: rgba(245, 241, 241, 0.925);
+    background-color: rgba(74, 181, 214, 0.308);
+    width: fit-content;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 9cm;
+    border-style: outset;
+    border-radius: 7px;
+    border-color: rgb(32, 174, 209);
+    margin-left: 7px;
+}
+
+.box {
+    display: flex;
+}
+
+/*------------------------------select--------------------------------------*/
+option {
+    background-color: rgb(65, 223, 60);
+    color: white;
+}
+
+
+.selector select {
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px;
+}
+.selector option {
+    cursor: pointer;
+}
+.selector select:hover {
+    background-color: tomato;
+}
+.selector select:focus {
+    background-color: rgb(65, 223, 60);
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.box-1 {
+    margin-right: 20px;
+    margin-top: 33px;
+}
+.box-2 {
+    width: 400px;
+    height: 300px;
+     margin-left: 50px;
+}
+ textarea {
+    resize: none;
+    background: transparent;
+    color: white;
+    background-image: rgba(148, 13, 13, 0.81);
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 23px rgba(168, 224, 222, 0.308);
+
+}
+ textarea:focus {
+    background-image: rgba(148, 13, 13, 0.81);
+    border-style: 5px solid red;
+}
+
+.inner-box-2 {
+    width: 380px;
+    height: 231px;
+    background-image: rgba(148, 13, 13, 0.88);
+    border-radius: 8px;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 23px rgba(177, 219, 216, 0.3);
+
+}
+
+.btn {
+    margin-left: 5px;
+    
+}
+.btn button {
+    background-color: transparent;
+    color: rgba(245, 241, 241, 0.925);
+    font-size: 18px;
+    border-radius: 8px 0 8px 0;
+    padding: 1px 5px;
+    margin-left: 4px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.btn button:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+    box-shadow: 3px 3px 20px rgba(245, 241, 241, 0.925);
+}
+
+/*/////////////////////////////*/
+
+
+
+#recording-instructions {
+    margin: 10px;
+    color: white;
+}
+.btn2 {
+    margin: 10px;
+}
+
+.down {
+    background-color: transparent;
+}

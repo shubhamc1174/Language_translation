@@ -1,0 +1,43 @@
+
+{% extends 'translate/base.html' %}
+
+{% block content %}
+<div class="inner-box-1">
+<form action="translated" method="post" id="form1" >
+    {% csrf_token %}
+    <textarea form="form1" rows="15" cols="50" placeholder="Enter your text here..."
+           required name="work"></textarea>
+</form>
+
+
+</div>
+
+
+
+<div class="btn">
+    <button form="form1" type="submit">Translate</button>
+</div>
+
+{%  endblock %}
+
+{% block content2 %}
+
+    <div class="selector" >
+                            <select name="to" id="lang" form="form1" required>
+                                <option value="hi">Hindi</option>
+                                <option value="en">English</option>
+                                <option value="it">Italian</option>
+                                <option value="fr">French</option>
+                                <option value="ja">Japanese</option>
+                                <option value="de">German</option>
+                                <option value="gu">Gujarati</option>
+                                <option value="bn">Bengali</option>
+                            </select>
+    </div>
+
+<div class="inner-box-2">
+
+</div>
+
+{% endblock %}
+

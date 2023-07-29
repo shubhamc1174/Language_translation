@@ -1,0 +1,53 @@
+
+{% extends 'translate/base.html' %}
+
+{% block content %}
+
+            <div class="app">
+
+                <form action="{% url 'translated' %}" method="post" id="form2">
+                    {% csrf_token %}
+                </form>
+                <div class="input">
+                    <textarea  form="form2" id="textbox3" name="work" placeholder="Speak to mic." rows="15" cols="50" readonly></textarea>
+
+                <div class="btn2">
+                    <button id="start">Start Recognition</button>
+                    <button id="pause">Pause Recognition</button>
+                    <button form="form2" type="submit" id="submit">Translate</button>
+                </div>
+
+                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+</div>
+
+            </div>
+                {% endblock %}
+
+
+                {% block content2 %}
+                <div class="app">
+                <div class="output">
+                    <div class="selector" >
+                            <select name="to" id="lang" form="form2" required >
+                                <option value="hi">Hindi</option>
+                                <option value="en">English</option>
+                                <option value="it">Italian</option>
+                                <option value="fr">French</option>
+                                <option value="ja">Japanese</option>
+                                <option value="de">German</option>
+                                <option value="gu">Gujarati</option>
+                                <option value="bn">Bengali</option>
+                            </select>
+                    </div>
+                    <textarea id="textbox4" rows="15" cols="50" readonly>{{text}}</textarea>
+
+                </div>
+            </div>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="\static/js/speech_record.js"></script>
+
+{% endblock %}
